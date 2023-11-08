@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            padding: 10px;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .content {
+            margin-top: 50px; /* Adjusted to make space for buttons */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button">Button 1</button>
+        <button class="button">Button 2</button>
+        <button class="button">Button 3</button>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the Button Page</h1>
+        <p>This is some content below the buttons.</p>
+    </div>
+</body>
+</html>
