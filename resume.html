@@ -1,196 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
-            a {
-            color: #3EB489; /* Change to your desired color using hexadecimal or other CSS color values */
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0 auto;
-            padding: 0;
-            background-color: #121212;
-            color: #fff5EA;
-            max-width:1000px;
-            box-sizing: border-box;
-        }
-        
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            background-color: #1f1e1e;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 999;
-        }
+      a {
+        color: #3EB489;
+        /* Change to your desired color using hexadecimal or other CSS color values */
+      }
 
-        .button {
-            background-color: #2e2e2e;
-            color: #fff5EA;
-            border: none;
-            width:50%;
-                        padding: 10px;
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #121212;
+        color: #fff5EA;
+        max-width: 1000px;
+        box-sizing: border-box;
+      }
 
-            font-size: 16px;
-            cursor: pointer;
-        }
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #1f1e1e;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
 
-        .content {
-            margin-top: 50px; /* Adjusted to make space for buttons */
-            padding: 20px;
-        }
+      .currbutton {
+        background-color: #121212;
+        color: #fff5EA;
+        border: none;
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
 
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h1 {
-            font-size:2em;
-            margin-bottom: 10px;
-            text-align:center;
-        }
-        .section h2 {
-            border-bottom: 2px solid #fff5EA;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
+      .button {
+        background-color: #2e2e2e;
+        color: #fff5EA;
+        border: none;
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
 
-        .section p {
-            margin: 0;
-        }
+      .content {
+        margin-top: 50px;
+        /* Adjusted to make space for buttons */
+        padding: 20px;
+      }
 
-        .contact-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
+      .section {
+        margin-bottom: 20px;
+      }
 
-        .contact-info i {
-            margin-right: 10px;
-        }
-        .clearance{
-            font-size:1.1em;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            text-align:center;
-        }
-        .left{
-            float: left;
-            font-weight:bold;
-        }
-        .right{
-            float: right;
-            font-weight:bold;
-            margin-bottom: 20px;
-        }
-        .description{
-            padding-left:20px;
-        }
+      .section h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .section h2 {
+        border-bottom: 2px solid #fff5EA;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+
+      .section p {
+        margin: 0;
+      }
+
+      .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .contact-info i {
+        margin-right: 10px;
+      }
+
+      .clearance {
+        font-size: 1.1em;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .left {
+        float: left;
+        font-weight: bold;
+      }
+
+      .right {
+        float: right;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        padding-left: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="button-container">
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
+      <button class="button">About Me</button>
+      <a href="https://bpack24.github.io/home/about-me">
+        <button class="currbutton" disabled>Resume</button>
+      </a>
     </div>
-
     <div class="content">
-        <div class="resume">
-            <div class="section">
-                <h1>Krystian Reyes</h1>                
-                <div class="clearance" >
-                    <i>Active Security Clearance</i>
-                </div>
-                        <div class="section">
-                <h2>Highlights of Qualifications</h2>
-                <ul>
-                    <li>Security Clearance with the Federal Government.</li>
-                    <li>Proficient skills in C++, SQL, Java, Python, C, JavaScript, Git, and Linux from experience as a coding instructor and university curriculum.</li>
-                    <li>Understanding of SIEM’s, Log Management systems, and V&V built from previous co-op experiences.</li>
-                    <li>Eager to learn, demonstrated by multiple extracurricular cybersecurity learning path certificates from IBM/Google – Coursera and TryHackMe.</li>
-                    <li>Strong written and oral communication skills developed by writing briefing notes to students/parents at GeekEDU regarding problems and recommendations.</li>
-                    <li>Collaborative skills strengthened at Lockheed Martin Canada, by working with 3+ team members in a detail-oriented environment.</li>
-                </ul>
-            </div>
-                <h2>Personal Information</h2>
-                <div class="contact-info">
-                    Ottawa, ON, Canada
-                    
-                </div>
-                <div class="contact-info">
-                    (647) 745-1809
-                </div>
-                <div class="contact-info">
-                    <a href="mailto:Krystian.Lari@gmail.com">Krystian.Lari@gmail.com</a>
-                </div>
-                <a href="https://www.linkedin.com/in/krystianreyes/">linkedin.com/in/krystianreyes/</a>
-            </div>
-
-            <div class="section">
-                <h2>Education</h2>
-                <div class="left">Bachelor of Computer Science, Co-op Option</div>
-                <div class="right">Sept 2021- Present</div>
-                <br>
-                Carleton University, Ottawa, Ontario<br>
-                <p class="description">
-                    <ul>
-                    <li>Third Year Standing, 10.77/12 (A)</li>
-                    <li>Dean’s Honour List - 4 semesters</li>
-                    <li>Henry Marshall Tory Scholarship</li>
-                    <li>Expected to graduate in Fall 2025</li>
-                    <li>Carleton CyberSci CTF Team 2023</li>
-                    <li>Coursework: <br><p class="description">Algorithms, Database Management, Data Structures, Operating Systems, Software Engineering, Software Development Life Cycle, Web Applications</p></li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Availability</h2>
-                <p>Available for 4 months beginning May 2024</p>
-            </div>
-            <div class="section">
-                <h2>Experience</h2>
-                 <div class="left">Cyber Security Engineer Co-op</div>
-                <div class="right">Sept 2023 - Present</div>
-                <br>
-                Lockheed Martin Canada, Stittsville, ON<br>
-                <p class="description">
-                    <ul>
-                    <li>Communicate effectively with technical and non-technical members of the engineering/management staff and personnel assigned to related work.</li>
-                    <li>Thrive in dynamic environments through high adaptability, learning agility, and autonomy.</li>
-                    <li>Verify the integrity of production systems and compliance with vendor requirements.</li>
-                </ul>
-                <div class="left">Cyber Security Analyst Co-op</div>
-                <div class="right"> May 2023 - Sept 2023</div>
-                <br>
-                Canadian Bank Note Company, Ottawa, ON<br>
-                <p class="description">
-                    <ul>
-                    <li> Became a subject matter expert on their SIEM, resulting in more accurate alerts.</li>
-                    <li>Researched and understand vendor documentation to filter what will/won't be an incident across multiple international teams.</li>
-                    <li>Reviewed regulatory compliance requirements (ISO 27001, SOC II, PCI), reporting and questions.</li>
-                    <li>Compiled experiences and changes into a presentation to upper management on the value of a Security Operations Center (SOC) to the business.</li>
-                </ul>
-                                <div class="left">Coding Instructor  </div>
-                <div class="right"> May 2022 – May 2023</div>
-                <br>
-                GeekEDU, Vancouver, BC (Remote)<br>
-                <p class="description">
-                    <ul>
-                    <li> Educated children of ages 7-18 through basic and advanced (Web Scraping, Matplotlib, SQLite, Tkinter, Google Cloud Vision API OCR) levels of Python and Java to allow them to produce programs independently comfortably.</li>
-                    <li>Informed parents of their child’s progress and performance – delivered critiques or issues in a direct but compassionate manner to prepare them for the next class.</li>
-                    <li>  Introduced complex ideas of data structures and algorithms to students with little knowledge, resulting in their ability to reproduce Deques, Merge Sort, Breadth-First Search, etc.</li>
-                    <li>Coached students into compartmentalizing their ideas to develop strong plans before producing solutions to projects and exercises, resulting in their ability to face larger problems more efficiently.</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Skills</h2>
-                <p>HTML, CSS, JavaScript, Python, etc.</p>
-            </div>
+      <div class="resume">
+        <div class="section">
+          <h1>Krystian Reyes</h1>
+          <div class="clearance">
+            <i>Active Security Clearance</i>
+          </div>
+          <div class="section">
+            <h2>Highlights of Qualifications</h2>
+            <ul>
+              <li>Security Clearance with the Federal Government.</li>
+              <li>Proficient skills in C++, SQL, Java, Python, C, JavaScript, Git, and Linux from experience as a coding instructor and university curriculum.</li>
+              <li>Understanding of SIEM’s, Log Management systems, and V&V built from previous co-op experiences.</li>
+              <li>Eager to learn, demonstrated by multiple extracurricular cybersecurity learning path certificates from IBM/Google – Coursera and TryHackMe.</li>
+              <li>Strong written and oral communication skills developed by writing briefing notes to students/parents at GeekEDU regarding problems and recommendations.</li>
+              <li>Collaborative skills strengthened at Lockheed Martin Canada, by working with 3+ team members in a detail-oriented environment.</li>
+            </ul>
+          </div>
+          <h2>Personal Information</h2>
+          <div class="contact-info"> Ottawa, ON, Canada </div>
+          <div class="contact-info"> (647) 745-1809 </div>
+          <div class="contact-info">
+            <a href="mailto:Krystian.Lari@gmail.com">Krystian.Lari@gmail.com</a>
+          </div>
+          <a href="https://www.linkedin.com/in/krystianreyes/">linkedin.com/in/krystianreyes/</a>
         </div>
+        <div class="section">
+          <h2>Education</h2>
+          <div class="left">Bachelor of Computer Science, Co-op Option</div>
+          <div class="right">Sept 2021- Present</div>
+          <br> Carleton University, Ottawa, Ontario <br>
+          <p class="description">
+          <ul>
+            <li>Third Year Standing, 10.77/12 (A)</li>
+            <li>Dean’s Honour List - 4 semesters</li>
+            <li>Henry Marshall Tory Scholarship</li>
+            <li>Expected to graduate in Fall 2025</li>
+            <li>Carleton CyberSci CTF Team 2023</li>
+            <li>Coursework: <br>
+              <p class="description">Algorithms, Database Management, Data Structures, Operating Systems, Software Engineering, Software Development Life Cycle, Web Applications</p>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Availability</h2>
+          <p>Available for 4 months beginning May 2024</p>
+        </div>
+        <div class="section">
+          <h2>Experience</h2>
+          <div class="left">Cyber Security Engineer Co-op</div>
+          <div class="right">Sept 2023 - Present</div>
+          <br> Lockheed Martin Canada, Stittsville, ON <br>
+          <p class="description">
+          <ul>
+            <li>Communicate effectively with technical and non-technical members of the engineering/management staff and personnel assigned to related work.</li>
+            <li>Thrive in dynamic environments through high adaptability, learning agility, and autonomy.</li>
+            <li>Verify the integrity of production systems and compliance with vendor requirements.</li>
+          </ul>
+          <div class="left">Cyber Security Analyst Co-op</div>
+          <div class="right"> May 2023 - Sept 2023</div>
+          <br> Canadian Bank Note Company, Ottawa, ON <br>
+          <p class="description">
+          <ul>
+            <li> Became a subject matter expert on their SIEM, resulting in more accurate alerts.</li>
+            <li>Researched and understand vendor documentation to filter what will/won't be an incident across multiple international teams.</li>
+            <li>Reviewed regulatory compliance requirements (ISO 27001, SOC II, PCI), reporting and questions.</li>
+            <li>Compiled experiences and changes into a presentation to upper management on the value of a Security Operations Center (SOC) to the business.</li>
+          </ul>
+          <div class="left">Coding Instructor </div>
+          <div class="right"> May 2022 – May 2023</div>
+          <br> GeekEDU, Vancouver, BC (Remote) <br>
+          <p class="description">
+          <ul>
+            <li> Educated children of ages 7-18 through basic and advanced (Web Scraping, Matplotlib, SQLite, Tkinter, Google Cloud Vision API OCR) levels of Python and Java to allow them to produce programs independently comfortably.</li>
+            <li>Informed parents of their child’s progress and performance – delivered critiques or issues in a direct but compassionate manner to prepare them for the next class.</li>
+            <li> Introduced complex ideas of data structures and algorithms to students with little knowledge, resulting in their ability to reproduce Deques, Merge Sort, Breadth-First Search, etc.</li>
+            <li>Coached students into compartmentalizing their ideas to develop strong plans before producing solutions to projects and exercises, resulting in their ability to face larger problems more efficiently.</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Certifications</h2>
+          <ul>
+            <li>IT Fundamentals for Cybersecurity Specialization - Coursera</li>
+            <ul>
+              <li>Introduction to Cybersecurity Tools & Cyber Attacks</li>
+              <li>Cybersecurity Roles, Processes & Operating System Security</li>
+              <li>Cybersecurity Compliance Framework & System Administration</li>
+              <li>Cybersecurity Compliance Framework & System Administration</li>
+            </ul>
+            <li>Google Cybersecurity – Coursera (In Progress)</li>
+            <ul>
+              <li>Foundations of Cybersecurity</li>
+              <li>Play It Safe: Manage Security Risks</li>
+            </ul>
+            <li>TryHackMe CompTIA Pentest+ Learning Path</li>
+            <li>TryHackMe Complete Beginner Learning Path</li>
+            <li>TryHackMe Pre-Security Learning Path</li>
+            <li>Standard First Aid & CPR/AED Level C</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
