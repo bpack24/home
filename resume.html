@@ -112,8 +112,13 @@
   </head>
   <body>
     <div class="button-container">
-      <button href="https://bpack24.github.io/home/about-me" class="button">About Me</button>
+      <button id="aboutme" class="button">About Me</button>
       <button class="currbutton" disabled>Resume</button>
+      <script type="text/javascript">
+        document.getElementById("aboutme").onclick = function() {
+          location.href = "https://bpack24.github.io/home/about-me";
+        };
+      </script>
     </div>
     <div class="content">
       <div class="resume">
