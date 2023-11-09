@@ -20,20 +20,14 @@
         box-sizing: border-box;
       }
 
-
-            @keyframes slideIn {
-        from {
-          transform: translateX(100%);
+      .fade-in-element {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
         }
 
-        to {
-          transform: translateX(0);
+        .fade-in-element.show {
+            opacity: 1;
         }
-      }
-
-      .slide-in {
-        
-      }
       .button-container {
         display: flex;
         justify-content: space-between;
@@ -136,7 +130,7 @@
     </div>
     <div class="content">
         <div class="resume">
-          <div class="slide-in">
+          <div class="fade-in-element">
             <div class="section">
             <h1>Krystian Reyes</h1>
             <div class="clearance">
@@ -235,6 +229,13 @@
                 <li>Standard First Aid & CPR/AED Level C</li>
             </ul>
             </div>
+          </div>
+          <script>
+            // Use JavaScript to add the 'show' class after a delay
+            setTimeout(function() {
+                document.querySelector('.fade-in-element').classList.add('show');
+            }, 400); // Delay in milliseconds (1 second in this example)
+        </script>
         </div>
       </div>
     </div>
