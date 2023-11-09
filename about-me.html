@@ -10,20 +10,13 @@
         /* Change to your desired color using hexadecimal or other CSS color values */
       }
 
-      @keyframes slideIn {
-        from {
-          transform: translateX(-100%);
+      .fade-in-element {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
         }
 
-        to {
-          transform: translateX(0);
-        }
-      }
-
-      .slide-in {
-        animation: slideIn 1s ease forwards;
-        text-align: center;
-        max-width: 1000px;
+      .fade-in-element.show {
+          opacity: 1;
       }
 
       body {
@@ -142,7 +135,7 @@
     </div>
     <div class="content">
       <div class="resume">
-        <div class="slide-in">
+        <div class="fade-in-element">
           <h1>Krystian Reyes</h1>
           <img class="portrait" src="https://images.msha.ke/fe0640fd-1ecc-491f-80c4-d0aeeb938473?auto=format%2Ccompress&cs=tinysrgb&q=30&w=828" width=50%>
           <div id="content">
@@ -152,5 +145,14 @@
             <p class="look21-about__body-paragraph">In the future I hope to become a Pentester or Bughunter in an environment with like-minded individuals, as becoming a Certified Ethical Hacker is my end goal!</p>
             <p class="look21-about__body-paragraph">On my own time I love to play video games, cook, shoot film photography and learn more about cybersecurity to get me ahead of university curriculum</p>
           </div>
+        </div>
+        <script>
+            // Use JavaScript to add the 'show' class after a delay
+            setTimeout(function() {
+                document.querySelector('.fade-in-element').classList.add('show');
+            }, 1000); // Delay in milliseconds (1 second in this example)
+        </script>
+      </div>
+    </div>
   </body>
 </html>
