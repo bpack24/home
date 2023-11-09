@@ -1,55 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Page</title>
+    <title>Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
+      a {
+        color: #3EB489;
+        /* Change to your desired color using hexadecimal or other CSS color values */
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translatex(-100%);
         }
 
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            background-color: #121212;
-            position: fixed;
-            width: 100%;
-            padding: 10px;
-            top: 0;
-            left: 0;
-            z-index: 999;
+        to {
+          transform: translateY(0);
         }
+      }
 
-        .button {
-            background-color: #1f1e1e;
-            color: #fff5EA;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+      .slide-in {
+        animation: slideIn 1s ease forwards;
+        text-align: center;
+        max-width: 1000px;
+      }
 
-        .content {
-            margin-top: 50px; /* Adjusted to make space for buttons */
-            padding: 20px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #121212;
+        color: #fff5EA;
+        max-width: 1000px;
+        box-sizing: border-box;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #1f1e1e;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      .currbutton {
+        background-color: #121212;
+        color: #fff5EA;
+        border: none;
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .button {
+        background-color: #2e2e2e;
+        color: #fff5EA;
+        border: none;
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .content {
+        margin-top: 50px;
+        /* Adjusted to make space for buttons */
+        padding: 20px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .section h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .section h2 {
+        border-bottom: 2px solid #fff5EA;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+
+      .section p {
+        margin: 0;
+      }
+
+      .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .contact-info i {
+        margin-right: 10px;
+      }
+
+      .clearance {
+        font-size: 1.1em;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .left {
+        float: left;
+        font-weight: bold;
+      }
+
+      .right {
+        float: right;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        padding-left: 20px;
+      }
+
+      .portrait {
+        max-width: 700;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="button-container">
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
-        <button class="button">Button 3</button>
+      <button class="currbutton" disabled>About Me</button>
+      <button id="resume" class="button">Resume</button>
+      <script type="text/javascript">
+        document.getElementById("aboutme").onclick = function() {
+          location.href = "https://bpack24.github.io/home/resume";
+        };
+      </script>
     </div>
-
     <div class="content">
-        <h1>Welcome to the Button Page</h1>
-        <p>This is some content below the buttons.</p>
-    </div>
-</body>
+      <div class="resume">
+        <div class="slide-in">
+          <h1>Krystian Reyes</h1>
+          <img class="portrait" src="https://images.msha.ke/fe0640fd-1ecc-491f-80c4-d0aeeb938473?auto=format%2Ccompress&cs=tinysrgb&q=30&w=828" width=50%>
+          <div id="content">
+            <h2 class="look21-about__subheading">Computer Science Student @ Carleton</h2>
+            <p class="look21-about__body-paragraph">Born &amp; raised in Mississauga but currently attending school in Ottawa at Carleton University</p>
+            <p class="look21-about__body-paragraph">Lockheed Martin Canada cyber co-op &amp; part time coding instructor for children of ages 8-18. Chasing multiple cybersecurity learning pathway certificates from IBM on Coursera, Google, TryHackMe, and now CompTIA Sec+. Previously a Line Cook at Gyubee JBBQ and a Team Member at a local Tim Hortons that found his love for tech in 10th grade.</p>
+            <p class="look21-about__body-paragraph">In the future I hope to become a Pentester or Bughunter in an environment with like-minded individuals, as becoming a Certified Ethical Hacker is my end goal!</p>
+            <p class="look21-about__body-paragraph">On my own time I love to play video games, cook, shoot film photography and learn more about cybersecurity to get me ahead of university curriculum</p>
+          </div>
+  </body>
 </html>
